@@ -1,6 +1,6 @@
 - company: "Wingify"
   summary: "We're a global SaaS company building experience optimization tools for businesses with online visitors."
-  logo: "/img/companylogos/wingify.png"
+  logo: "img/companyLogos/wingify-logo-color-1920-1080.png"
   url: "https://wingify.com/"
   positions:
   - title: "Software Engineer II"
@@ -13,7 +13,7 @@
 
 - company: "Tata Consultancy Services"
   summary: "TCS, a global leader in IT services, consulting, and business solutions, leverages technology for business transformation and helps catalyze change."
-  logo: "/img/companylogos/tcs.jpg"
+  logo: "img/companyLogos/Tata_Consultancy_Services_Logo.svg"
   url: "https://www.tcs.com/"
   positions:
   - title: "Software Engineer"
