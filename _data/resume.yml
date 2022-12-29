@@ -9,9 +9,9 @@ header:
     and new technologies to learn. Experienced with the Software Development Life Cycle (SDLC)
     utilizing various project management methodologies including Agile, Scrum and Kanban. 
     Efficient working both independently and in a team environment.
-contact:
+# contact:
 
-  email: rajat.developer97@gmail.com
+#   email: rajat.developer97@gmail.com
 sections:
   experience:   true
   education:    true
