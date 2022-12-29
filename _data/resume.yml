@@ -1,0 +1,30 @@
+theme: default
+header:
+  name: Rajat Garg
+  display_contact_info: true
+  current_title: Software Engineer II
+  intro: >
+    I believe "Software Engineering is 90% Problem Solving and 10% Programming."
+    Motivated and a versatile software engineer, always looking for new challenges 
+    and new technologies to learn. Experienced with the Software Development Life Cycle (SDLC)
+    utilizing various project management methodologies including Agile, Scrum and Kanban. 
+    Efficient working both independently and in a team environment.
+contact:
+
+  email: rajat.developer97@gmail.com
+sections:
+  experience:   true
+  education:    true
+  projects:     true
+  skills:       true
+  recognition:  true
+  associations: false
+  interests:    true
+  links:        true
+  social_links: false
+social:
+  Website:    https://RajatGarg97.github.io
+  GitHub:     https://github.com/RajatGarg97
+  Twitter:    https://twitter.com/rajatgarg_97
+  FaceBook:   https://facebook.com/rajatgarg97
+  LinkedIn:   https://linkedin.com/in/rajatgarg97
