@@ -1,5 +1,5 @@
-Here you can say lots of fun things about your site.
+Hi, I am Rajat, a Tech Enthusiast.
+ 
+In this blog, I'll talk about the interesting technical problems I've contributed to throughout my professional journey.
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Hope you enjoy reading here!
