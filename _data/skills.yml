@@ -1,0 +1,37 @@
+#- skill: string
+#  description: string
+#  list:
+#    - array
+#    - of
+#    - strings
+#
+# Template supports both a description AND a skill list, however it may look best if only one or the
+# other is used. Lists are sorted and concatenated without line breaks separated by • (&bull;)
+
+# - skill: Problem Solving, Data Structures and Algorithms
+#   description: "1+ years of experience in teaching Data Structures and Algorithms to over 50+ fresh graduates and experienced professionals."
+- skill: Tools & Technologies
+  list:
+    - Problem Solving
+    - Data Structures
+    - Algorithms
+    - Java
+    - JavaScript
+    - Node.JS
+    - TypeScript
+    - Lua
+    - ElectronJS
+    - Python
+    - Socket.IO
+    - MongoDB
+    - SQL
+    - Microsevices
+    - Jenkins
+    - Apache Airflow
+    - Confluence
+    - Chrome DevTools
+    - Docker
+    - git
+    - Jira
+    - Postman
+    - VS Code

@@ -1,0 +1,53 @@
+- company: "Wingify"
+  summary: "We're a global SaaS company building experience optimization tools for businesses with online visitors."
+  logo: "/img/companylogos/wingify.png"
+  url: "https://wingify.com/"
+  positions:
+  - title: "Software Engineer II"
+    startdate: 2022-01-18
+    summary: 
+    projects:
+      - "Developing and optimising our in-house Dynamic Content Delivery Network(CDN)."
+      - "Reduced the process utilization of CDN nodes by 50%."
+      - "Reduced the response time spikes on servers from upto 7 seconds to 500 milliseconds."
+
+- company: "Tata Consultancy Services"
+  summary: "TCS, a global leader in IT services, consulting, and business solutions, leverages technology for business transformation and helps catalyze change."
+  logo: "/img/companylogos/tcs.jpg"
+  url: "https://www.tcs.com/"
+  positions:
+  - title: "Software Engineer"
+    startdate: 2020-11-02
+    enddate: 2022-01-17
+    summary: "Utilized the Eclipse RCP to develop a 3GPP standardized MCPTT (Mission Critical Push-To-Talk) application in Java."
+    projects:
+      - "Successfully developed and delivered an analysis tool (alongside my primary project) used for detailed analysis of application logs."
+      - "Regular client interactions have helped me improve my communication skills and build diplomatic and negotiation skills."
+
+- company: "Zyla Health"
+  summary:
+  logo: "/img/companylogos/zyla.png"
+  url: "https://zyla.in/"
+  positions: 
+  - title: "Software Engineer Intern"
+    startdate: 2020-01-20
+    enddate: 2020-03-15
+    summary: "Zyla is care management platform that ensures improved health outcomes through personalised lifestyle interventions that include nutrition, physiotherapy, exercise, and medication to deliver holistic, high-quality and continuous care to patients."
+    projects:
+      - Implemented fail-safe auto-sync feature in the slave database.
+      - Implemented task failure email alert on all Airflow jobs.
+      - Gained first-hand experience of the software development lifecycle, agile methodologies, and scalable architecture.
+
+- company: "Scaler Academy (formerly InterviewBit Academy)"
+  summary:
+  logo: "/img/companylogos/scaler.png"
+  url: "https://www.scaler.com/"
+  positions: 
+  - title: "Teaching Partner"
+    startdate: 2020-10-10
+    enddate: 2019-08-01
+    summary: "An online platform that provides high quality technology education. (Ranked 10 on LinkedIn Top Startups 2019)"
+    projects:
+      - Assisted 25+ graduates in core CS subjects like Data Structures, Algorithms, System Design and OS.
+      - Conducted daily online sessions for students, completed 180+ hours of online teaching time.
+      - Organized various standup sessions for discussing problems on Data Structures and Algorithms.
