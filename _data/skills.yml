@@ -26,6 +26,8 @@
     - MongoDB
     - SQL
     - Microsevices
+    - Jenkins
+    - Apache Airflow
     - Confluence
     - Chrome DevTools
     - Docker
