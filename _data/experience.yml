@@ -44,8 +44,8 @@
   url: "https://www.scaler.com/"
   positions: 
   - title: "Teaching Partner"
-    startdate: 2020-10-10
-    enddate: 2019-08-01
+    startdate: 2019-08-01 
+    enddate: 2020-10-10
     summary: "An online platform that provides high quality technology education. (Ranked 10 on LinkedIn Top Startups 2019)"
     projects:
       - Assisted 25+ graduates in core CS subjects like Data Structures, Algorithms, System Design and OS.
