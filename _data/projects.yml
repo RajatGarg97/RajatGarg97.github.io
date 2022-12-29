@@ -1,7 +1,7 @@
 - project: Screen Recorder
   role: Developer
   # duration: Dec, 2020 &mdash; Present
-  url: "uri.im/scr"
+  url: "http://uri.im/scr"
   description: >
     Developed a simple and easy-to- use screen recording desktop application while exploring ElectronJS APIs.
     Added target screen selection functionality to dedicatedly record an app window and protect user privacy.
@@ -9,7 +9,7 @@
 - project: URL Shortener
   role: Developer
   # duration: 2015 &mdash; Present
-  url: "uri.im/shurl"
+  url: "http://uri.im/shurl"
   description: >
     Developed a URL Shortening service while learning MongoDB along with NodeJS.
     Added support for customized URL generation.
