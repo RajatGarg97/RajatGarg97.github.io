@@ -1,7 +1,7 @@
 theme: default
 header:
   name: Rajat Garg
-  display_contact_info: true
+  display_contact_info: false
   current_title: Software Engineer II
   intro: >
     I believe "Software Engineering is 90% Problem Solving and 10% Programming."
