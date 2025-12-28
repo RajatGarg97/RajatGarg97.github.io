@@ -162,7 +162,7 @@ body::after {
   border-radius: 12px;
   cursor: pointer;
   transition: all var(--transition-normal);
-  margin-left: 1rem;
+  flex-shrink: 0; /* Prevent shrinking on small screens */
 }
 
 .theme-toggle:hover {
@@ -289,16 +289,7 @@ pre code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
+  gap: 1rem;
 }
 
 .site-title {
@@ -368,15 +359,20 @@ pre code {
 }
 
 @media (max-width: 600px) {
+  .site-header .wrapper {
+    position: relative;
+  }
+  
   .site-nav {
     position: absolute;
     top: 100%;
-    right: 1rem;
+    right: 50px; /* Leave space for theme toggle */
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     flex-direction: column;
     display: none;
+    min-width: 150px;
   }
   
   .site-nav.nav-open {
@@ -394,9 +390,20 @@ pre code {
     border-bottom: none;
   }
   
+  .site-nav .page-link::after {
+    display: none; /* Hide underline animation on mobile menu */
+  }
+  
+  /* Theme toggle stays visible on mobile */
   .theme-toggle {
     width: 40px;
     height: 40px;
+    position: relative;
+    z-index: 101; /* Above the dropdown menu */
+  }
+  
+  .site-title {
+    font-size: 1.25rem;
   }
 }
 

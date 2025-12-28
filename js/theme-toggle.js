@@ -146,12 +146,12 @@
    * Add the toggle button to the page
    */
   function addToggleToPage() {
-    const nav = document.querySelector('.site-nav');
-    if (nav) {
+    const header = document.querySelector('.site-header .wrapper');
+    if (header) {
       const toggle = createThemeToggle();
       
-      // Insert after the nav links
-      nav.appendChild(toggle);
+      // Insert at the end of the header wrapper (far right)
+      header.appendChild(toggle);
     }
   }
 
