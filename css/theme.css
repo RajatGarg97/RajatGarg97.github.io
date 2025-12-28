@@ -1,36 +1,45 @@
 /* ============================================
-   PROFESSIONAL DARK THEME WITH TECHNICAL TOUCH
+   PROFESSIONAL THEME WITH LIGHT/DARK MODES
+   Technical Touch with Theme Toggle
+   ============================================ */
+
+/* ============================================
+   THEME VARIABLES - DARK MODE (Default)
    ============================================ */
 
 :root {
-  /* Core Colors */
+  /* Core Colors - Dark */
   --bg-primary: #0b0d14;
   --bg-secondary: #12151f;
   --bg-tertiary: #1a1e2e;
   --bg-card: #151822;
   
-  /* Text Colors */
+  /* Text Colors - Dark */
   --text-primary: #e8eaed;
   --text-secondary: #9aa0a6;
   --text-muted: #6b7280;
   
-  /* Accent Colors */
+  /* Accent Colors (same for both themes) */
   --accent-primary: #00d4aa;
   --accent-secondary: #00a8ff;
   --accent-gradient: linear-gradient(135deg, #00d4aa 0%, #00a8ff 100%);
   
-  /* Borders & Lines */
+  /* Borders & Lines - Dark */
   --border-color: #2a2f3e;
   --border-accent: #00d4aa33;
   
-  /* Code/Technical */
+  /* Code/Technical - Dark */
   --code-bg: #1a1e2e;
   --code-text: #00d4aa;
   
-  /* Shadows */
+  /* Shadows - Dark */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
   --shadow-glow: 0 0 20px rgba(0, 212, 170, 0.15);
+  
+  /* Grid background opacity */
+  --grid-opacity: 0.03;
+  --glow-opacity: 0.08;
   
   /* Spacing */
   --section-gap: 3rem;
@@ -39,6 +48,46 @@
   /* Transitions */
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s ease;
+  --transition-theme: 0.3s ease;
+}
+
+/* ============================================
+   THEME VARIABLES - LIGHT MODE
+   ============================================ */
+
+[data-theme="light"] {
+  /* Core Colors - Light */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f5f9;
+  --bg-card: #ffffff;
+  
+  /* Text Colors - Light */
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  
+  /* Accent Colors - Slightly darker for light mode contrast */
+  --accent-primary: #009d7e;
+  --accent-secondary: #0284c7;
+  --accent-gradient: linear-gradient(135deg, #009d7e 0%, #0284c7 100%);
+  
+  /* Borders & Lines - Light */
+  --border-color: #e2e8f0;
+  --border-accent: #009d7e33;
+  
+  /* Code/Technical - Light */
+  --code-bg: #f1f5f9;
+  --code-text: #009d7e;
+  
+  /* Shadows - Light */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 20px rgba(0, 157, 126, 0.1);
+  
+  /* Grid background opacity */
+  --grid-opacity: 0.04;
+  --glow-opacity: 0.06;
 }
 
 /* ============================================
@@ -63,6 +112,7 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-theme), color var(--transition-theme);
 }
 
 /* Technical grid background */
@@ -74,11 +124,12 @@ body::before {
   right: 0;
   bottom: 0;
   background-image: 
-    linear-gradient(rgba(0, 212, 170, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 212, 170, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(0, 157, 126, var(--grid-opacity)) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 157, 126, var(--grid-opacity)) 1px, transparent 1px);
   background-size: 50px 50px;
   pointer-events: none;
   z-index: -1;
+  transition: opacity var(--transition-theme);
 }
 
 /* Subtle gradient overlay */
@@ -89,9 +140,64 @@ body::after {
   left: 0;
   right: 0;
   height: 400px;
-  background: radial-gradient(ellipse at 50% 0%, rgba(0, 212, 170, 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(0, 157, 126, var(--glow-opacity)) 0%, transparent 70%);
   pointer-events: none;
   z-index: -1;
+  transition: opacity var(--transition-theme);
+}
+
+/* ============================================
+   THEME TOGGLE BUTTON
+   ============================================ */
+
+.theme-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-glow);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  transition: transform var(--transition-normal), opacity var(--transition-normal);
+}
+
+.theme-toggle .sun-icon {
+  position: absolute;
+  color: var(--accent-primary);
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+.theme-toggle .moon-icon {
+  color: var(--accent-primary);
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+[data-theme="light"] .theme-toggle .sun-icon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+[data-theme="light"] .theme-toggle .moon-icon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
 }
 
 /* ============================================
@@ -104,6 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
   margin-top: 0;
   line-height: 1.3;
+  transition: color var(--transition-theme);
 }
 
 h1 { font-size: 2.5rem; letter-spacing: -0.02em; }
@@ -114,6 +221,7 @@ h4 { font-size: 1.25rem; }
 p {
   color: var(--text-secondary);
   margin-bottom: 1rem;
+  transition: color var(--transition-theme);
 }
 
 a {
@@ -137,6 +245,7 @@ code {
   padding: 0.2em 0.4em;
   border-radius: 4px;
   font-size: 0.9em;
+  transition: background-color var(--transition-theme), color var(--transition-theme);
 }
 
 pre {
@@ -145,6 +254,7 @@ pre {
   border-radius: 8px;
   padding: 1.25rem;
   overflow-x: auto;
+  transition: background-color var(--transition-theme), border-color var(--transition-theme);
 }
 
 pre code {
@@ -165,12 +275,30 @@ pre code {
   z-index: 100;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  transition: background-color var(--transition-theme), border-color var(--transition-theme);
 }
 
 .wrapper {
   max-width: var(--content-max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+/* Header wrapper for flex layout with theme toggle */
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
 }
 
 .site-title {
@@ -182,6 +310,7 @@ pre code {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  transition: color var(--transition-theme);
 }
 
 .site-title::before {
@@ -200,8 +329,9 @@ pre code {
 }
 
 .site-nav {
-  float: right;
-  line-height: 54px;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 
 .site-nav .page-link {
@@ -239,9 +369,18 @@ pre code {
 
 @media (max-width: 600px) {
   .site-nav {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: 8px;
+    flex-direction: column;
+    display: none;
+  }
+  
+  .site-nav.nav-open {
+    display: flex;
   }
   
   .site-nav .page-link {
@@ -253,6 +392,11 @@ pre code {
   
   .site-nav .page-link:last-child {
     border-bottom: none;
+  }
+  
+  .theme-toggle {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -277,6 +421,7 @@ pre code {
   border-left: 3px solid var(--accent-primary);
   padding-left: 1rem;
   margin-bottom: 2rem;
+  transition: color var(--transition-theme), border-color var(--transition-theme);
 }
 
 /* ============================================
@@ -527,6 +672,7 @@ pre code {
   border-top: 1px solid var(--border-color);
   padding: 2rem 0;
   margin-top: var(--section-gap);
+  transition: background-color var(--transition-theme), border-color var(--transition-theme);
 }
 
 .footer-heading {
@@ -699,7 +845,8 @@ pre code {
   .site-header,
   .site-footer,
   .share-links,
-  .post_navi {
+  .post_navi,
+  .theme-toggle {
     display: none;
   }
   
@@ -713,4 +860,3 @@ pre code {
     color: black;
   }
 }
-

@@ -3,10 +3,58 @@
 
 /* ============================================
    RESUME/PORTFOLIO PAGE STYLES
-   Professional Dark Theme with Technical Touch
+   Professional Theme with Light/Dark Mode Support
    ============================================ */
 
 /* Variables inherited from theme.css via CSS custom properties */
+
+/* Light mode specific overrides for resume page */
+[data-theme="light"] {
+    .page-content .page-header {
+        .header-title .header-name {
+            background: linear-gradient(135deg, #1e293b 0%, #009d7e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .avatar {
+            box-shadow: 
+                0 0 0 4px var(--bg-primary),
+                0 0 30px rgba(0, 157, 126, 0.2);
+            
+            &:hover {
+                box-shadow: 
+                    0 0 0 4px var(--bg-primary),
+                    0 0 40px rgba(0, 157, 126, 0.35);
+            }
+        }
+        
+        .title-bar .icon-links .icon-link {
+            img {
+                filter: brightness(0) invert(0.4);
+            }
+            
+            &:hover img {
+                filter: brightness(0) invert(0.2);
+            }
+        }
+    }
+    
+    .content-section .resume-item {
+        &:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .company-logo {
+            background: var(--bg-tertiary);
+        }
+    }
+    
+    .bottom-bar {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+}
 
 @mixin heading-font {
     font-family: 'Space Grotesk', 'Open Sans', sans-serif;
