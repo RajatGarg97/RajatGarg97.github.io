@@ -55,9 +55,21 @@ body {
 
 /* Layout */
 .wrapper {
-  max-width: 640px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 1.5rem;
+  }
 }
 
 /* Header */
