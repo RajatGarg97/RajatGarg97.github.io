@@ -25,19 +25,6 @@ Writing on system design, distributed systems, and backend architecture. New pos
 
 ---
 
-## Projects
-
-{% for project in site.data.projects limit:3 %}
-**{{ project.project }}**
-
-{{ project.description | strip_html | truncatewords: 20 }}
-
-{% endfor %}
-
-[View all projects →](/projects)
-
----
-
 ## Contact
 
 **Resume**: [View resume](/resume.html) · **Email**: [rajat.developer97@gmail.com](mailto:rajat.developer97@gmail.com)
