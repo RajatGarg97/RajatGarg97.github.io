@@ -12,6 +12,7 @@ theme: "minima"
 # Navigation
 header_pages:
   - writing.md
+  - projects.md
   - about.md
 
 plugins:
