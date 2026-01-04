@@ -32,4 +32,4 @@ A selection of system-level work and technical projects.
 
 ---
 
-**Resume**: [PDF](/resume.html) | **Contact**: [Email](mailto:{{ site.email }})
+**Resume**: [PDF](/resume.html) · **Contact**: [Email](mailto:{{ site.email }})
