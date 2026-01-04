@@ -80,7 +80,15 @@
     {%- endif -%}
   </div>
   <!-- Summary -->
-  <div class="executive-summary" itemprop="description"><p>{{ resume.header.intro }}</p></div>
+  <div class="executive-summary" itemprop="description">
+    {% assign paragraphs = resume.header.intro | split: "
+" %}
+    {% for paragraph in paragraphs %}
+      {% if paragraph != "" %}
+        <p>{{ paragraph }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
   <!-- Contact me button -->
   <!-- {%- if resume.contact.email -%}
     <div>
