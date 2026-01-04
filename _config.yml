@@ -12,8 +12,6 @@ theme: "minima"
 # Navigation
 header_pages:
   - writing.md
-  - about.md
-  - resume.md
   - contact.md
 
 plugins:
