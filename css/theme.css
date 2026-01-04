@@ -180,6 +180,15 @@ a:hover {
   content: ':';
 }
 
+/* Homepage headline */
+.home h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
 /* Section spacing on homepage */
 .home h2 {
   margin-top: 3rem;
@@ -189,6 +198,18 @@ a:hover {
   color: var(--text);
   text-transform: none;
   letter-spacing: 0;
+}
+
+/* Projects on homepage */
+.home h2 + p + p {
+  margin-bottom: 1.5rem;
+}
+
+.home h2 + p + p strong {
+  font-weight: 600;
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
 .home hr {
