@@ -22,9 +22,3 @@ Writing on system design, distributed systems, and backend architecture. New pos
 
 [View all posts →](/writing)
 {% endif %}
-
----
-
-## Contact
-
-**Resume**: [View resume](/resume.html) · **Email**: [rajat.developer97@gmail.com](mailto:rajat.developer97@gmail.com)
