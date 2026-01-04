@@ -4,15 +4,16 @@ title: About
 permalink: /about/
 ---
 
-I'm Rajat Garg, a software engineer with 5 years of experience building backend systems and distributed infrastructure.
+I'm a Senior Software Engineer who works primarily on backend and distributed systems that need to perform reliably at scale.
 
-I'm interested in system design, scalability patterns, and the craft of building reliable software. I write here to share what I've learned and to think through problems more clearly.
+Most of my experience has been around building and improving performance-critical infrastructure such as caching layers, traffic handling mechanisms, and configuration systems. I've worked on systems that handle high request volumes, where even small design choices can have a significant impact on latency, stability, and cost.
 
-Previously, I've worked on backend systems at Wingify and Tata Consultancy Services. You can find more details in my [resume](/resume.html).
+I enjoy thinking beyond just implementation. I like understanding why a system is designed a certain way, what trade-offs are being made, and how it will behave under failure or unexpected load. Over time, I've become more interested in system design, operability, and how large systems evolve rather than one-off optimizations.
+
+I regularly collaborate with engineers across teams, participate in design discussions, and review technical proposals for shared systems. I'm intentionally growing toward roles that involve deeper system ownership, architectural decision-making, and technical leadership.
 
 ---
 
 **Elsewhere**: [GitHub](https://github.com/RajatGarg97) · [LinkedIn](https://linkedin.com/in/rajatgarg97) · [Twitter](https://twitter.com/rajatgarg_97)
 
 **Email**: rajat.developer97@gmail.com
-

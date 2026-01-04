@@ -1,53 +1,52 @@
-- company: "Wingify"
-  summary: "We're a global SaaS company building experience optimization tools for businesses with online visitors."
+- company: "VWO"
+  summary: "VWO (formerly Wingify) is a global SaaS company building experience optimization tools for businesses with online visitors."
   logo: "img/companyLogos/wingify-logo-color-1920-1080.png"
-  url: "https://wingify.com/"
+  url: "https://vwo.com/"
   positions:
+  - title: "Senior Software Engineer"
+    startdate: 2023-11-01
+    summary: "Leading the scaling and optimization of our in-house Dynamic Content Delivery Network (CDN) and distributed systems infrastructure."
+    projects:
+      - "Led the scaling of our in-house Dynamic Content Delivery Network (CDN) to handle 60,000 requests per second."
+      - "Transformed the Dynamic CDN into a Hybrid CDN by integrating Google Cloud CDN to handle the serving of static information, thus reducing the bandwidth of the Dynamic CDN by 80%."
+      - "Reduced the 95 percentile latency of the first call hitting the CDN by 20%."
+      - "Implemented a one-click solution for upscaling infrastructure of our CDN in under 10 minutes."
+      - "Implemented proactive measures to prevent downtime and handle traffic spikes effectively."
+      - "Enhanced system performance through automation, reducing human error and improving efficiency."
+      - "Built the team of 5 for managing the CDN from scratch."
   - title: "Software Engineer II"
     startdate: 2022-01-18
-    summary: 
+    enddate: 2023-10-31
+    summary: "Worked on optimizing CDN configurations and implementing dynamic request routing solutions."
     projects:
-      - "Developing and optimising our in-house Dynamic Content Delivery Network(CDN)."
-      - "Reduced the process utilization of CDN nodes by 50%."
-      - "Reduced the response time spikes on servers from upto 7 seconds to 500 milliseconds."
+      - "Collaborated with cross-functional teams to optimize CDN configurations for various applications, ensuring seamless content distribution and security compliance."
+      - "Designed and implemented Lua scripts for dynamic request routing, caching strategies, and load balancing, enhancing performance and scalability."
+      - "Reduced production incidents through continuous monitoring, proactive maintenance, and rapid issue resolution, ensuring stable CDN operations."
 
 - company: "Tata Consultancy Services"
   summary: "TCS, a global leader in IT services, consulting, and business solutions, leverages technology for business transformation and helps catalyze change."
   logo: "img/companyLogos/Tata_Consultancy_Services_Logo.svg"
   url: "https://www.tcs.com/"
   positions:
-  - title: "Software Engineer"
+  - title: "Software Engineer (TCS Digital)"
     startdate: 2020-11-02
     enddate: 2022-01-17
-    summary: "Utilized the Eclipse RCP to develop a 3GPP standardized MCPTT (Mission Critical Push-To-Talk) application in Java."
+    summary: "Developed a 3GPP standardized Mission Critical Push-To-Talk (MCPTT) application in Java using the Eclipse Rich Client Platform (RCP)."
     projects:
-      - "Successfully developed and delivered an analysis tool (alongside my primary project) used for detailed analysis of application logs."
-      - "Regular client interactions have helped me improve my communication skills and build diplomatic and negotiation skills."
-
-- company: "Zyla Health"
-  summary:
-  logo: "img/companyLogos/zyla.png"
-  url: "https://zyla.in/"
-  positions: 
-  - title: "Software Engineer Intern"
-    startdate: 2020-01-20
-    enddate: 2020-03-15
-    summary: "Zyla is care management platform that ensures improved health outcomes through personalised lifestyle interventions that include nutrition, physiotherapy, exercise, and medication to deliver holistic, high-quality and continuous care to patients."
-    projects:
-      - Implemented fail-safe auto-sync feature in the slave database.
-      - Implemented task failure email alert on all Airflow jobs.
-      - Gained first-hand experience of the software development lifecycle, agile methodologies, and scalable architecture.
+      - "Developed a 3GPP standardized Mission Critical Push-To-Talk (MCPTT) application in Java using the Eclipse Rich Client Platform (RCP)."
+      - "Created and deployed an analysis tool for detailed application log analysis, successfully balancing this project alongside primary responsibilities."
+      - "Enhanced communication, diplomatic, and negotiation skills through regular client interactions, fostering strong professional relationships."
 
 - company: "Scaler Academy (formerly InterviewBit Academy)"
-  summary:
+  summary: "An online platform that provides high quality technology education. (Ranked 10 on LinkedIn Top Startups 2019)"
   logo: "img/companyLogos/scaler.png"
   url: "https://www.scaler.com/"
   positions: 
-  - title: "Teaching Partner"
+  - title: "Teaching Assistant"
     startdate: 2019-08-01 
     enddate: 2020-10-10
-    summary: "An online platform that provides high quality technology education. (Ranked 10 on LinkedIn Top Startups 2019)"
+    summary: "Assisted graduates in core CS subjects and conducted online teaching sessions."
     projects:
-      - Assisted 25+ graduates in core CS subjects like Data Structures, Algorithms, System Design and OS.
-      - Conducted daily online sessions for students, completed 180+ hours of online teaching time.
-      - Organized various standup sessions for discussing problems on Data Structures and Algorithms.
+      - "Assisted 25+ graduates in core CS subjects like Data Structures, Algorithms, System Design and OS."
+      - "Conducted daily online sessions for students, completed 180+ hours of online teaching time."
+      - "Organized various standup sessions for discussing problems on Data Structures and Algorithms."

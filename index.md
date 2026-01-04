@@ -2,7 +2,7 @@
 layout: home
 ---
 
-I'm a software engineer working on backend systems and distributed architecture.
+I'm a Senior Software Engineer working on backend and distributed systems that need to perform reliably at scale.
 
 I write about system design, scalability patterns, and lessons from building production systems.
 
