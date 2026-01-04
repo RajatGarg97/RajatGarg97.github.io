@@ -1,5 +1,6 @@
 ---
 layout: home
+title: ""
 ---
 
 # Rajat Garg — Senior Software Engineer
@@ -39,4 +40,4 @@ Writing on system design, distributed systems, and backend architecture. New pos
 
 ## Contact
 
-**Resume**: [View resume](/resume.html) | **Email**: [rajat.developer97@gmail.com](mailto:rajat.developer97@gmail.com)
+**Resume**: [View resume](/resume.html) · **Email**: [rajat.developer97@gmail.com](mailto:rajat.developer97@gmail.com)
