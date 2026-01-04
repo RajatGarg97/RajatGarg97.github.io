@@ -1,42 +1,30 @@
 title: "Rajat Garg"
 author: "Rajat Garg"
-description: "Software Engineer | Building scalable systems & solving complex problems. Sharing technical insights and lessons from my journey." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "Software engineer writing about system design, backend architecture, and distributed systems."
 
-# Email / Social media user names used by the minima theme:
-# All of these are optional and can be removed or commented out
 email: "rajat.developer97@gmail.com"
 twitter_username: "rajatgarg_97"
 github_username: "RajatGarg97"
 linkedin_username: "rajatgarg97"
-facebook_username: "rajatgarg97"
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
-#youtube_username: username
-#googleplus_username: +username
 
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
 theme: "minima"
 
-rss: rss
+# Navigation
+header_pages:
+  - writing.md
+  - about.md
 
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-    
 plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-titles_from_headings:
-  strip_title: true
-  collections: true
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
 
 defaults:
   - scope:
       path: ""
       type: post
     values:
-      tags: Other
+      layout: post

@@ -1,24 +1,9 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
+<footer class="site-footer">
   <div class="wrapper">
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
-      </div>
-
-      <div class="footer-col">
-        {%- if site.email or site.twitter_username or site.github_username or site.linkedin_username or site.facebook_username -%}
-        <ul class="social-media-list">
-          {%- include social.html -%}
-        </ul>
-        {%- endif -%}
-      </div>
+    <div class="footer-links">
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="https://linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+      <a href="mailto:{{ site.email }}">Email</a>
     </div>
-
   </div>
-
 </footer>
-
