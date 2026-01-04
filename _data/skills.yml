@@ -1,37 +1,46 @@
-#- skill: string
-#  description: string
-#  list:
-#    - array
-#    - of
-#    - strings
-#
-# Template supports both a description AND a skill list, however it may look best if only one or the
-# other is used. Lists are sorted and concatenated without line breaks separated by • (&bull;)
-
-# - skill: Problem Solving, Data Structures and Algorithms
-#   description: "1+ years of experience in teaching Data Structures and Algorithms to over 50+ fresh graduates and experienced professionals."
-- skill: Tools & Technologies
+- skill: Distributed Systems & Infrastructure
+  description: "Experience building and scaling high-performance distributed systems, CDNs, and infrastructure automation."
   list:
-    - Problem Solving
-    - Data Structures
-    - Algorithms
+    - Distributed Systems
+    - System Design
+    - Content Delivery Networks (CDN)
+    - Infrastructure Automation
+    - Performance Optimization
+    - Scalability Engineering
+    - Low-Latency Systems
+    - Traffic Management
+    - Load Balancing
+    - Caching Strategies
+
+- skill: Programming Languages
+  list:
     - Java
-    - JavaScript
-    - Node.JS
-    - TypeScript
     - Lua
-    - ElectronJS
     - Python
-    - Socket.IO
+    - JavaScript
+    - TypeScript
+    - Node.js
+
+- skill: Cloud & Infrastructure
+  list:
+    - Google Cloud Platform
+    - Docker
+    - Microservices Architecture
+    - System Monitoring
+    - Incident Management
+    - Infrastructure Scaling
+
+- skill: Data & Storage
+  list:
     - MongoDB
     - SQL
-    - Microsevices
-    - Jenkins
-    - Apache Airflow
-    - Confluence
-    - Chrome DevTools
-    - Docker
-    - git
-    - Jira
-    - Postman
-    - VS Code
+    - Database Design
+
+- skill: Development Tools & Practices
+  list:
+    - Git
+    - Agile Methodologies
+    - Software Design
+    - Code Review
+    - Technical Leadership
+    - Cross-functional Collaboration
