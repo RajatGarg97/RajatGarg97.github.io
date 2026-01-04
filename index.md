@@ -2,34 +2,41 @@
 layout: home
 ---
 
-I'm a Senior Software Engineer working on backend and distributed systems that need to perform reliably at scale.
+# Rajat Garg — Senior Software Engineer
 
-I write about system design, scalability patterns, and lessons from building production systems.
-
-**Topics**: Distributed systems · Backend architecture · System design · Engineering practices
+This is a technical blog and portfolio focused on system design, backend architecture, and distributed systems. I write about building reliable systems at scale, architectural decisions, and lessons from production infrastructure.
 
 ---
 
-## Recent
+## Recent Writing
 
+{% if site.posts.size > 1 %}
 {% for post in site.posts limit:5 %}
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%b %Y" }}
 {% endfor %}
 
-{% if site.posts.size == 0 %}
-_No posts yet. Check back soon._
-{% endif %}
-
 [All posts →](/writing)
+{% else %}
+Writing on system design, distributed systems, and backend architecture. New posts coming soon.
+
+[View all posts →](/writing)
+{% endif %}
 
 ---
 
 ## Projects
 
-A selection of system-level work and technical projects.
+{% for project in site.data.projects limit:3 %}
+**{{ project.project }}**
 
-[View projects →](/projects)
+{{ project.description | strip_html | truncatewords: 20 }}
+
+{% endfor %}
+
+[View all projects →](/projects)
 
 ---
 
-**Resume**: [PDF](/resume.html) · **Contact**: [Email](mailto:{{ site.email }})
+## Contact
+
+**Resume**: [View resume](/resume.html) | **Email**: [rajat.developer97@gmail.com](mailto:rajat.developer97@gmail.com)

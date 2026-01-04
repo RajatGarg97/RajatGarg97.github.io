@@ -14,6 +14,4 @@ I regularly collaborate with engineers across teams, participate in design discu
 
 ---
 
-**Elsewhere**: [GitHub](https://github.com/RajatGarg97) · [LinkedIn](https://linkedin.com/in/rajatgarg97) · [Twitter](https://twitter.com/rajatgarg_97)
-
-**Email**: rajat.developer97@gmail.com
+**Contact**: [Email](mailto:rajat.developer97@gmail.com) | [LinkedIn](https://linkedin.com/in/rajatgarg97) | [GitHub](https://github.com/RajatGarg97) | [Twitter](https://twitter.com/rajatgarg_97)
